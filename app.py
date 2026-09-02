@@ -5,6 +5,18 @@ import streamlit.components.v1 as components
 from catboost import CatBoostClassifier 
 import json
 
+# =========================================================================
+# 0. 置換favicon.ico
+# =========================================================================
+from PIL import Image
+# 讀取本地圖片
+icon = Image.open("favicon.ico")
+# 設定至頁面配置
+st.set_page_config(
+    page_title="第四組",
+    page_icon=icon
+)
+# =========================================================================
 
 # ============================================================
 # PAGE CONFIG
@@ -12,7 +24,7 @@ import json
 
 st.set_page_config(
     page_title="Sleep Disorder Risk Prediction",
-    page_icon="🌙",
+    #page_icon="🌙",
     layout="wide"
 )
 

@@ -52,22 +52,24 @@ model = load_catboost_model()
 # ============================================================
 # SIDEBAR
 # ============================================================
-
-
-
+#modified by Shelley Chen
 st.sidebar.markdown(
-    """
+    f"""
     <div style="
         font-size: 20px;
         font-weight: 700;
         white-space: nowrap;
         margin-bottom: 14px;
     ">
-        🌙 Sleep Disorder Project
+        <!-- 🌙 Sleep Disorder Project -->
+        {pgtitle}
     </div>
     """,
     unsafe_allow_html=True
 )
+
+
+
 # ============================================================
 # 主選單修改 modified by Shelley Chen
 # ============================================================

@@ -3066,7 +3066,7 @@ chart.appear(1000, 100);
 # ============================================================
 
 #elif page == "2. 輸入與預測":
-elif page == pgmenu2
+elif page == pgmenu2:
 #    st.title(
 #        "🌙 Sleep Disorder Risk Prediction"
 #    )

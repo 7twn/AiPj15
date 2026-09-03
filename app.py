@@ -32,7 +32,8 @@ pgmenu2="2. 睡眠風險-預測"
 # ============================================================
 
 st.set_page_config(
-    page_title="Sleep Disorder Risk Prediction",
+    #page_title="Sleep Disorder Risk Prediction",
+    page_title=pgtitle,
     #page_icon="🌙",
     layout="wide"
 )

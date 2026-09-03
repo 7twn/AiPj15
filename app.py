@@ -71,14 +71,15 @@ st.sidebar.markdown(
 # ============================================================
 # 主選單修改 modified by Shelley Chen
 # ============================================================
-pgmen1="1. 睡眠風險-研究"
-pgmen2="2. 睡眠風險-預測"
+pgtitle="目標:睡眠風險"
+pgmenu1="1. 睡眠風險-研究"
+pgmenu2="2. 睡眠風險-預測"
 
 page = st.sidebar.radio(
     " ", 
     [
-        pgmen1,
-        pgmen2
+        pgmenu1,
+        pgmenu2
     ]
 )
    
@@ -87,7 +88,7 @@ page = st.sidebar.radio(
 # MODEL 說明
 # ============================================================
 
-if page == pgmen1:
+if page == pgmenu1:
 
     col1, col2 = st.columns([0.55, 8])
 
@@ -3064,11 +3065,16 @@ chart.appear(1000, 100);
 # INPUT + PREDICTION
 # ============================================================
 
-elif page == "2. 輸入與預測":
-
+#elif page == "2. 輸入與預測":
+elif page == pgmenu2
+#    st.title(
+#        "🌙 Sleep Disorder Risk Prediction"
+#    )
     st.title(
-        "🌙 Sleep Disorder Risk Prediction"
+        pgtitle
     )
+
+    
 
     st.write(
         "請輸入您的生活與睡眠資訊，系統將使用 CatBoost 預測睡眠障礙風險。"

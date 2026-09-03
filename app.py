@@ -26,27 +26,18 @@ st.set_page_config(
     #page_icon="🌙",
     layout="wide"
 )
-
-
 # ============================================================
 # LOAD MODEL
 # ============================================================
-
 @st.cache_resource
 def load_catboost_model():
-
     model = CatBoostClassifier()
 
     model.load_model(
         "catboost_web13.cbm"
     )
-
     return model
-
-
 model = load_catboost_model()
-
-
 # ============================================================
 # SIDEBAR
 # ============================================================
@@ -57,8 +48,7 @@ st.sidebar.markdown(
         font-weight: 700;
         white-space: nowrap;
         margin-bottom: 14px;
-    ">
-        🌙 Sleep Disorder Project
+    "> <!---🌙 Sleep Disorder Project --->
     </div>
     """,
     unsafe_allow_html=True

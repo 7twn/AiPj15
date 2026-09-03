@@ -23,7 +23,7 @@ st.set_page_config(
 # ============================================================
 
 st.set_page_config(
-    page_title="Sleep Disorder Risk Prediction",
+    page_title="研究結果 — 睡眠風險",
     #page_icon="🌙",
     layout="wide"
 )
@@ -69,10 +69,10 @@ st.sidebar.markdown(
 )
 
 page = st.sidebar.radio(
-    "功能選單",
+    "選單",
     [
-        "1. Model 說明",
-        "2. 輸入與預測"      
+        "1. 睡眠風險-模組說明",
+        "2. 睡眠風險-輸入與預測"      
     ]
 )
    

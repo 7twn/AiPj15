@@ -68,12 +68,17 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True
 )
+# ============================================================
+# 主選單修改 modified by Shelley Chen
+# ============================================================
+pgmen1="1. 睡眠風險-研究"
+pgmen2="2. 睡眠風險-預測"
 
 page = st.sidebar.radio(
     " ", 
     [
-        "1. 睡眠風險-研究",
-        "2. 睡眠風險-預測"
+        pgmen1,
+        pgmen2
     ]
 )
    
@@ -82,7 +87,7 @@ page = st.sidebar.radio(
 # MODEL 說明
 # ============================================================
 
-if page == "1. Model 說明":
+if page == pgmen1:
 
     col1, col2 = st.columns([0.55, 8])
 

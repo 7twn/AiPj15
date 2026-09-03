@@ -48,7 +48,7 @@ st.sidebar.markdown(
         font-weight: 700;
         white-space: nowrap;
         margin-bottom: 14px;
-    "> <!---🌙 Sleep Disorder Project --->
+    "> 🌙 Sleep Disorder Project
     </div>
     """,
     unsafe_allow_html=True

@@ -21,26 +21,39 @@ st.set_page_config(
 # ============================================================
 # PAGE CONFIG
 # ============================================================
+
 st.set_page_config(
-    page_title="睡眠風險",
+    page_title="Sleep Disorder Risk Prediction",
     #page_icon="🌙",
     layout="wide"
 )
+
+
 # ============================================================
 # LOAD MODEL
 # ============================================================
+
 @st.cache_resource
 def load_catboost_model():
+
     model = CatBoostClassifier()
 
     model.load_model(
         "catboost_web13.cbm"
     )
+
     return model
+
+
 model = load_catboost_model()
+
+
 # ============================================================
 # SIDEBAR
 # ============================================================
+
+
+
 st.sidebar.markdown(
     """
     <div style="
@@ -48,18 +61,18 @@ st.sidebar.markdown(
         font-weight: 700;
         white-space: nowrap;
         margin-bottom: 14px;
-    "> 
-    🌙 Sleep Disorder Project
+    ">
+        🌙 Sleep Disorder Project
     </div>
     """,
     unsafe_allow_html=True
 )
 
 page = st.sidebar.radio(
-    "選單",
+    "功能選單",
     [
-        "1. 睡眠風險-模組說明",
-        "2. 睡眠風險-輸入與預測"      
+        "1.【睡眠風險】研究",
+        "2.【睡眠風險】預測"
     ]
 )
    

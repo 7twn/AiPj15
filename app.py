@@ -22,7 +22,7 @@ st.set_page_config(
 # PAGE CONFIG
 # ============================================================
 st.set_page_config(
-    page_title="研究結果 — 睡眠風險",
+    page_title="睡眠風險",
     #page_icon="🌙",
     layout="wide"
 )
@@ -48,7 +48,8 @@ st.sidebar.markdown(
         font-weight: 700;
         white-space: nowrap;
         margin-bottom: 14px;
-    "> 🌙 Sleep Disorder Project
+    "> 
+    🌙 Sleep Disorder Project
     </div>
     """,
     unsafe_allow_html=True

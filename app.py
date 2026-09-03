@@ -23,14 +23,10 @@ st.set_page_config(
 pgtitle="目標:睡眠風險"
 pgmenu1="1. 睡眠風險-研究"
 pgmenu2="2. 睡眠風險-預測"
-
-# =========================================================================
-
-
+pgmenu3="3. 關於"
 # ============================================================
 # PAGE CONFIG
 # ============================================================
-
 st.set_page_config(
     #page_title="Sleep Disorder Risk Prediction",
     page_title=pgtitle,
@@ -56,8 +52,6 @@ def load_catboost_model():
 
 
 model = load_catboost_model()
-
-
 # ============================================================
 # SIDEBAR
 # ============================================================
@@ -3066,7 +3060,6 @@ chart.appear(1000, 100);
 # PAGE 2
 # INPUT + PREDICTION
 # ============================================================
-
 #elif page == "2. 輸入與預測":
 elif page == pgmenu2:
 #    st.title(
@@ -3075,9 +3068,6 @@ elif page == pgmenu2:
     st.title(
         pgtitle
     )
-
-    
-
     st.write(
         "請輸入您的生活與睡眠資訊，系統將使用 CatBoost 預測睡眠障礙風險。"
     )
